@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1raftaar - Get Official App on WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght=0,300;0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brandCyan: '#00f3ff',
+                        brandOrange: '#ff7b00',
+                        brandPurple: '#b026ff',
+                        whatsappGreen: '#25D366',
+                        glassBg: 'rgba(255, 255, 255, 0.03)',
+                        glassBorder: 'rgba(255, 255, 255, 0.08)',
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'pulse-green': 'pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(0, 243, 255, 0.4)' },
+                            '50%': { opacity: .8, boxShadow: '0 0 40px rgba(0, 243, 255, 0.8)' },
+                        },
+                        'pulse-green': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(37, 211, 102, 0.4)' },
+                            '50%': { opacity: .8, boxShadow: '0 0 40px rgba(37, 211, 102, 0.8)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617; /* Very dark slate */
+            color: white;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        
+        /* Premium Image Logo styling */
+        .logo-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 30px;
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1) inset;
+            background: #000;
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(20, 20, 25, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Gradient Text */
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #fff, #00f3ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .delay-2000 { animation-delay: 2s; }
+        .delay-4000 { animation-delay: 4s; }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1271732848340385');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1271732848340385&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body class="antialiased min-h-screen relative font-sans flex items-center justify-center py-10 px-4">
+    
+    <!-- Animated Mesh Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-[-1] bg-[#020617]">
+        <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-brandPurple rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-blob"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[400px] h-[400px] bg-brandCyan rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob delay-2000"></div>
+        <div class="absolute bottom-[-20%] left-[20%] w-[600px] h-[600px] bg-brandOrange rounded-full mix-blend-screen filter blur-[150px] opacity-10 animate-blob delay-4000"></div>
+    </div>
+
+    <!-- Main Glass Card -->
+    <div class="glass-panel w-full max-w-md rounded-[2.5rem] p-8 md:p-10 flex flex-col items-center relative z-10">
+        
+        <!-- Animated Ring Behind Logo -->
+        <div class="relative mb-6 animate-float">
+            <div class="absolute inset-0 bg-gradient-to-tr from-brandPurple to-brandCyan rounded-[30px] blur-xl opacity-40"></div>
+            <!-- Built-in SVG fallback dynamic generator in case logo.jpeg fails to load -->
+            <img src="logo.jpeg" id="logo" alt="1raftaar Logo" class="logo-image relative z-10" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'logo-image relative z-10 flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-black border border-white/20 text-center\'><span class=\'text-brandCyan font-black text-3xl tracking-tighter\'>1R</span><span class=\'text-white font-semibold text-[10px] tracking-[0.2em] uppercase mt-1\'>Raftaar</span></div>';">
+        </div>
+
+        <!-- Heading & Subtitle -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold tracking-tight mb-2 text-white">
+                1RAFTAAR
+            </h1>
+            <p class="text-brandCyan text-sm tracking-[0.2em] uppercase font-bold flex items-center justify-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-ping inline-block"></span>
+                Official Gaming Support
+            </p>
+        </div>
+
+        <!-- Sleek WhatsApp Alert Box -->
+        <div class="w-full flex items-center justify-between bg-emerald-950/20 border border-emerald-500/20 rounded-2xl p-4 mb-6 backdrop-blur-md">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-whatsappGreen/20 flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp text-whatsappGreen text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Live Agent Connected</span>
+                    <span class="text-white text-sm font-bold">Get App File Instantly</span>
+                </div>
+            </div>
+            <div class="text-right">
+                <span class="text-emerald-400 font-black text-sm tracking-wide block" id="countdown">ONLINE</span>
+            </div>
+        </div>
+
+        <!-- Premium WhatsApp CTA Button -->
+        <a href="https://wa.link/fbzad5" target="_blank" onclick="fbq('track', 'Contact');" class="w-full relative group block mb-8">
+            <!-- Glowing effect -->
+            <div class="absolute inset-0 bg-whatsappGreen rounded-2xl blur-md opacity-60 group-hover:opacity-100 transition duration-300 animate-pulse-green"></div>
+            <!-- Main Button with WhatsApp green gradient -->
+            <div class="relative w-full bg-gradient-to-r from-emerald-500 to-green-600 text-white font-black py-4 px-8 rounded-2xl text-lg hover:scale-[1.02] transition-all duration-300 uppercase tracking-widest text-center flex items-center justify-center gap-3 border border-white/20">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                WhatsApp Now
+            </div>
+        </a>
+
+        <!-- Glass Stats Grid (Tuned for support trust & safety) -->
+        <div class="grid grid-cols-3 gap-3 w-full mb-8">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col items-center justify-center text-center backdrop-blur-sm">
+                <i class="fa-solid fa-bolt text-whatsappGreen text-xl mb-1"></i>
+                <h3 class="text-white font-bold text-sm">&lt; 30s</h3>
+                <p class="text-gray-400 text-[8px] font-semibold uppercase tracking-widest mt-1">Reply Time</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col items-center justify-center text-center backdrop-blur-sm">
+                <i class="fa-solid fa-gift text-brandOrange text-xl mb-1"></i>
+                <h3 class="text-white font-bold text-sm">₹500</h3>
+                <p class="text-gray-400 text-[8px] font-semibold uppercase tracking-widest mt-1">Signup Bonus</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col items-center justify-center text-center backdrop-blur-sm">
+                <i class="fa-solid fa-shield-halved text-brandCyan text-xl mb-1"></i>
+                <h3 class="text-white font-bold text-sm">Verified</h3>
+                <p class="text-gray-400 text-[8px] font-semibold uppercase tracking-widest mt-1">100% Secure</p>
+            </div>
+        </div>
+
+        <!-- Trust Info -->
+        <p class="text-gray-500 text-xs font-medium text-center flex items-center justify-center gap-2">
+            <i class="fa-solid fa-user-shield text-gray-600"></i>
+            Trusted by 100K+ Active Indian Gamers
+        </p>
+
+    </div>
+
+    <!-- Live indicator pulse update -->
+    <script>
+        // Set state to visual heartbeat
+        const statusEl = document.getElementById('countdown');
+        let blink = true;
+        setInterval(() => {
+            statusEl.style.opacity = blink ? '0.5' : '1';
+            blink = !blink;
+        }, 1000);
+    </script>
+</body>
+</html>
